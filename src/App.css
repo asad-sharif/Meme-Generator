@@ -23,9 +23,9 @@
 }
 
 .meme-wrapper {
-  width: 45%;
-  border: 1px solid black;
-  margin: 3rem;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin: 1rem;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
 }
 
 .meme-form {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -63,14 +63,54 @@ button {
   cursor: pointer;
   transition: all ease .3s;
 }
-button:hover{
+
+button:hover {
   transform: scale(0.98);
   box-shadow: 0 0 10px black;
 }
-.meme-img{
+
+.meme {
+  position: relative;
   width: 100%;
-  /* height: fit-content; */
+}
+
+.meme-img {
+  /* max-width: 100%; */
+  border-radius: 3px;
+  width: 100%;
   object-fit: cover;
   margin: 1rem 0;
-  /* border-radius: 5px; */
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 10px 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
