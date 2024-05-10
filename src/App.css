@@ -5,22 +5,17 @@
 }
 
 .header {
-  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 10px;
-  padding: 10px 50px;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 1rem;
   color: white;
   background: linear-gradient(to right, #672280, #A626D3);
   text-shadow: 0 0 10px black;
   width: 100%;
 }
 
-.header img {
-  width: 50px;
-  height: 50px;
-}
 
 .meme-wrapper {
   width: 50%;
@@ -40,11 +35,14 @@
   gap: 1rem;
   width: 100%;
 }
+label{
+  font-size: .9rem;
+}
 
 input {
   display: block;
   border-radius: 5px;
-  padding: .5rem;
+  padding: .4rem;
   margin: .3rem 0;
   width: 100%;
 }
@@ -54,7 +52,7 @@ button {
   color: white;
   background: linear-gradient(to right, #672280, #A626D3);
   width: 100%;
-  padding: 1rem;
+  padding: .5rem 1rem;
   font-size: 1.2rem;
   border-radius: 5px;
   border: none;
@@ -116,9 +114,6 @@ button:hover {
 }
 
 @media(min-width: 320px) and (max-width: 1024px) {
-  .header{
-    padding: 15px;
-  }
   .header h1{
     font-size: 1.5rem;
   }
